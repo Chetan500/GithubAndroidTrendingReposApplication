@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GithubAndroidReposApp</string>
+    <string name="github_trending_android_repos_activity_name">Github Trending Android Repos</string>
+    <string name="github_repo_details_activity_name">Github Repo Details</string>
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBE9E7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.GithubRepoDetailActivity">
+
+        <TextView
+            android:id="@+id/tvRepoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:text="Repository"
+            android:textColor="@android:color/white"
+            android:background="@android:color/darker_gray"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgRepo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_repos_32" />
+
+            <TextView
+                android:id="@+id/tvRepoFullName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text="Repo FullName"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRepoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:text="Repo Description"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgStars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_stars_32" />
+
+                <TextView
+                    android:id="@+id/tvStars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="1k"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_code_32" />
+
+                <TextView
+                    android:id="@+id/tvLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Kotlin"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgForks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_forks_32" />
+
+                <TextView
+                    android:id="@+id/tvForks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="1k"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgIssues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_issues_32" />
+
+                <TextView
+                    android:id="@+id/tvIssues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="1k"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvOwnerLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Owner"
+            android:textColor="@android:color/white"
+            android:background="@android:color/darker_gray"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_owner_type_32" />
+
+            <TextView
+                android:id="@+id/tvOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text="Owner Name"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgOwnerType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_owner_type_32" />
+
+            <TextView
+                android:id="@+id/tvOwnerType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="User"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

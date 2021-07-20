@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF7043"
+    android:orientation="vertical"
+    tools:context=".ui.GithubTrendingAndroidReposActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGithubTrendingReposList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:listitem="@layout/itemview_github_android_repo" />
+
+    <ProgressBar
+        android:id="@+id/pbLoadRepos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+</LinearLayout>
